@@ -1,0 +1,30 @@
+//   <section class="section">
+//       <h2 class="title">fghfgd</h2>
+//       <p class="text">jgfjogifbj</p>
+//     </section>
+// .section {
+//   color: red;
+// }
+// .section .title {
+//   color: green;
+// }
+
+// .section .text {
+//   color: teal;
+// }
+
+.section {
+  color: red;
+
+  &-title {
+    color: green;
+
+    &--red {
+      color: red;
+    }
+  }
+
+  &-text {
+    color: teal;
+  }
+}
