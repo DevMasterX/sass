@@ -1,12 +1,15 @@
-.section {
-  color: red;
+.icon-facebook {
+  background-image: url("../images/facebook.svg");
 }
-.section-title {
-  color: green;
+
+.icon-github {
+  background-image: url("../images/github.svg");
 }
-.section-title--red {
-  color: red;
+
+.icon-linkedin {
+  background-image: url("../images/linkedin.svg");
 }
-.section-text {
-  color: teal;
+
+.icon-twitter {
+  background-image: url("../images/twitter.svg");
 }/*# sourceMappingURL=main.css.map */
