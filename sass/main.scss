@@ -1,10 +1,10 @@
-// @import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixins";
+// @use "./utils/variables";
+// @use "./utils/placeholders";
+// @use "./utils/mixins";
 
-// @import "./base/normalize";
-// @import "./components/page-header";
-// @import "./components/logo";
+// @use "./base/normalize";
+// @use "./components/page-header";
+// @use "./components/logo";
 
 // .notification-error {
 //   @extend %notification;
@@ -15,9 +15,9 @@
 //   background-color: green;
 // }
 
-// p {
-//   @extend %centeredFlex;
-// }
+p {
+  @extend %centeredFlex;
+}
 
 // div {
 //   @include centeredFlex();
@@ -32,13 +32,5 @@
 // }
 
 $icons: "facebook", "github", "linkedin", "twitter";
-
-@mixin generateIcons($iconList) {
-  @each $iconName in $iconList {
-    .icon-#{$iconName} {
-      background-image: url("../images/#{$iconName}.svg");
-    }
-  }
-}
 
 @include generateIcons($icons);
