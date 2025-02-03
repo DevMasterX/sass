@@ -2,6 +2,8 @@
 // @use "./utils/placeholders";
 // @use "./utils/mixins";
 
+@use "./utils/extend";
+
 // @use "./base/normalize";
 // @use "./components/page-header";
 // @use "./components/logo";
@@ -15,9 +17,9 @@
 //   background-color: green;
 // }
 
-p {
-  @extend %centeredFlex;
-}
+// p {
+//   @extend %centeredFlex;
+// }
 
 // div {
 //   @include centeredFlex();
@@ -31,6 +33,6 @@ p {
 //   @extend %list;
 // }
 
-$icons: "facebook", "github", "linkedin", "twitter";
+// $icons: "facebook", "github", "linkedin", "twitter";
 
-@include generateIcons($icons);
+// @include generateIcons($icons);

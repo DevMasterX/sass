@@ -1,10 +1,6 @@
-.notification-info, .notification-success, .notification-primary {
-  display: -webkit-box;
-  display: -ms-flexbox;
+%notification {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
   width: 480px;
   padding: 20px;
@@ -18,13 +14,16 @@
 }
 
 .notification-primary {
+  @extend %notification;
   background-color: #f07f2e;
 }
 
 .notification-success {
+  @extend %notification;
   background-color: #82c43c;
 }
 
 .notification-info {
+  @extend %notification;
   background-color: #4e75ff;
-}/*# sourceMappingURL=main.css.map */
+}
