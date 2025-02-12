@@ -4,11 +4,9 @@
 
 @use "./utils/extend";
 @use "./utils/variables" as vars;
-
-// @use "./base/normalize";
+@use "examples/lesson-11/if"; // @use "./base/normalize";
 // @use "./components/page-header";
 // @use "./components/logo";
-
 // .notification-error {
 //   @extend %notification;
 //   background-color: red;
@@ -17,26 +15,20 @@
 //   @extend %notification;
 //   background-color: green;
 // }
-
 // p {
 //   @extend %centeredFlex;
 // }
-
 // div {
 //   @include centeredFlex();
 // }
-
 // botton {
 //   @include centeredFlex(inline-flex);
 // }
-
 // .features {
 //   @extend %list;
 // }
-
 // $icons: "facebook", "github", "linkedin", "twitter";
 // @include generateIcons($icons);
-
 body {
   background-color: vars.$accent-color;
 }
