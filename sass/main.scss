@@ -1,8 +1,9 @@
 // @use "./utils/variables";
-// @use "./utils/placeholders";
-// @use "./utils/mixins";
+@use "./utils/placeholders";
+@use "./utils/mixins";
 
 @use "./utils/extend";
+@use "./utils/variables" as vars;
 
 // @use "./base/normalize";
 // @use "./components/page-header";
@@ -34,5 +35,8 @@
 // }
 
 // $icons: "facebook", "github", "linkedin", "twitter";
-
 // @include generateIcons($icons);
+
+body {
+  background-color: vars.$accent-color;
+}
